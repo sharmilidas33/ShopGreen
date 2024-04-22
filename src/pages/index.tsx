@@ -1,19 +1,13 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import Header from "@/components/header/Header";
-import BottomHeader from "@/components/header/BottomHeader";
-import Footer from "@/components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import Banner from "@/components/Banner";
+import Products from "@/components/Products";
 
 export default function Home() {
   return (
    <main>
-    <Header/>
-    <BottomHeader/>
-    <div className="py-10 bg-lime-200">
+    <div className="max-w-screen-2xl mx-auto">
+      <Banner/>
+      <Products/>
     </div>
-    <Footer/>
    </main>
   );
 }
