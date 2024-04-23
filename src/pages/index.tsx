@@ -11,3 +11,8 @@ export default function Home() {
    </main>
   );
 }
+
+//SSR for data fetching
+export const getServerSideProps = async () => {
+  const res = await fetch("")
+}
